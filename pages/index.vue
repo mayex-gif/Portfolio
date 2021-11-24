@@ -1,77 +1,26 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <div>
+    <div class="Contenedor" style="margin-top: 2%;">
+      <h2 style="font-family: 'Teko', sans-serif; position: absolute; letter-spacing: 20px ;font-size: 45px  ; margin-top: 4%; margin-left: 45%;">MARCO JURÍDICO</h2>
+      <h3 style="font-family: 'Teko', sans-serif; position: absolute; letter-spacing: 5px ;font-size: 45px  ; margin-top: 33%; margin-left: 32%; text-decoration: underline;">ISMDF</h3>
+      <center>
+        <img src="https://lh5.googleusercontent.com/hxzUfQ4FR8g8lgbqMddB-JmOEIomXheg6UJADYPGktSC3cRfc2STm2OfO6BSTtFhh3wH_HaKF1BVVRc9R8ZNH9gvuLuUl4vZTQbCBj-3EHK6bAc0hD-Z8ITOOqo8p3XYVZ6NEHs" style="position: relative; width: 98%; height: 580px;">
+      </center>
+    </div>
+    <v-divider class="mx-16"></v-divider>
+    <v-divider class="mx-16"></v-divider>
+    <v-divider class="mx-16"></v-divider>
+    <h3 style="font-family: 'Teko', sans-serif; letter-spacing: 5px ;font-size: 20px; text-align: center; margin: 2%;">PÁGINA INFORMÁTICA - PROYECTO ESCOLAR</h3>
+    <center>
+      <p>Página realizada como actividad correspondiente a la materia de Marco Jurídico de las actvidades industriales dada en Instituto Superior Manuel de Falla<br>Página informática con respecto al marco jurídico de las actividades industriales - Técnico en Programación</p>
+      <v-hover v-slot="{ hover }" open-delay="15" close-delay="15">
+        <v-btn :elevation="hover ? 10 : 5" :class="{ 'on-hover':hover }" outlined href="https://ismdf-mj.web.app/" style="margin: 2%;">
+          <v-text>Ir a la página</v-text>
+        </v-btn>
+      </v-hover>
+    </center>
+    <v-divider class="mx-16"></v-divider>
+    <v-divider class="mx-16"></v-divider>
+    <v-divider class="mx-16"></v-divider>
+  </div>
 </template>

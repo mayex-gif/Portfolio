@@ -5,12 +5,16 @@
         <v-toolbar-title class="mx-16" style="letter-spacing: 1px; font-family: 'Teko', sans-serif;">
           <strong>Alcalde Alejo</strong>
         </v-toolbar-title>
-        <v-btn color="primary" outlined icon @click.stop="clipped = !clipped" style="margin-left:65%;" href="https://www.linkedin.com/in/alejo-alcalde-5a0314215/">
-          <v-icon>mdi-linkedin</v-icon>
-        </v-btn>
-        <v-btn color="" outlined icon @click.stop="clipped = !clipped" href="https://github.com/mayex-gif" style="margin-left: 2%;">
-          <v-icon>mdi-github</v-icon>
-        </v-btn>
+        <v-hover v-slot="{ hover }" open-delay="15" close-delay="15">
+          <v-btn :elevation="hover ? 5 : 2" :class="{ 'on-hover':hover }" color="primary" outlined icon style="margin-left:65%;" href="https://www.linkedin.com/in/alejo-alcalde-5a0314215/">
+            <v-icon>mdi-linkedin</v-icon>
+          </v-btn>
+        </v-hover>
+        <v-hover v-slot="{ hover }" open-delay="15" close-delay="15">
+          <v-btn :elevation="hover ? 5 : 2" :class="{ 'on-hover':hover }" outlined icon href="https://github.com/mayex-gif" style="margin-left: 2%;">
+            <v-icon>mdi-github</v-icon>
+          </v-btn>
+        </v-hover>
         </v-app-bar>
       </v-hover>
     <v-main>
